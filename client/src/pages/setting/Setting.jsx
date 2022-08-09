@@ -1,8 +1,11 @@
 import React from 'react'
 import './setting.css'
 import Sidebar from '../../components/sidebar/Sidebar'
+import { UserAuth } from '../../context/AuthContext'
 
 const Setting = () => {
+    const {user} = UserAuth();
+    
     return (
         <div className='setting'>
             <div className="settingWrapper">
