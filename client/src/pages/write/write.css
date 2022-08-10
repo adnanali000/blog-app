@@ -8,10 +8,11 @@
 }
 
 .writeImg {
-  width: auto;
-  height: auto;
+  width: 60%;
+  height: 40%;
   border-radius: 10px;
   object-fit: cover;
+  margin-bottom: 40px;
 }
 
 .writeForm {
@@ -42,6 +43,8 @@
   padding: 20px;
   width: 70vw;
 }
+
+
 
 .writeInput::placeholder {
   color: rgb(189, 185, 185);

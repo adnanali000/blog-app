@@ -10,6 +10,7 @@ import Register from "./pages/register/Register";
 import Setting from "./pages/setting/Setting";
 import Write from "./pages/write/Write";
 import ProtectedRoute from './components/protectedRoute/ProtectedRoute'
+import Update from './pages/update/Update';
 
 function App() {
   return (
@@ -19,11 +20,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/post/:id" element={<Post />} />
+          <Route path="/update/:id" element={<Update />} />
           <Route path="/write" element={<ProtectedRoute><Write /></ProtectedRoute>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/settings" element={<ProtectedRoute><Setting /></ProtectedRoute>} />
-          <Route path="/myblogs" element={<ProtectedRoute><MyBlog /></ProtectedRoute>} />
+          {/* <Route path="/myblogs" element={<ProtectedRoute><MyBlog /></ProtectedRoute>} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

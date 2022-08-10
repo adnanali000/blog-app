@@ -39,7 +39,7 @@ const Register = () => {
     <>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
-          <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+          <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 head">
             <h1 className="title-font font-medium text-3xl text-gray-900">Blog posts allow you and your business to publish insights, thoughts, and stories on your website about any topic.</h1>
             <p className="leading-relaxed mt-4">A discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries (posts).</p>
           </div>
