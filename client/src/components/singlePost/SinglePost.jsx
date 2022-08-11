@@ -46,12 +46,12 @@ const SinglePost = ({ blog, id }) => {
           </h1>
           <div className="singlePostInfo">
             <span>
-              Author:
+              {/* Author: */}
               <b className="singlePostAuthor">
-                Adnan
+                {/* {user.uid} */}
               </b>
             </span>
-            <span>1 day ago</span>
+            {/* <span>1 day ago</span> */}
           </div>
           <p className="singlePostDesc">
             {blog && blog.description}

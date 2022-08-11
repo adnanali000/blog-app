@@ -3,7 +3,7 @@ import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutl
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import CreateIcon from '@mui/icons-material/Create';
 
-const Widget = ({ type }) => {
+const Widget = ({ type,blogs,users }) => {
     let data;
     switch (type) {
         case "user":
@@ -46,7 +46,7 @@ const Widget = ({ type }) => {
         <div className='widget'>
             <div className="left">
                 <div className="title">{data.title}</div>
-                <div className="counter">{data.list}</div>
+                <div className="counter">{blogs ? blogs && blogs.length : users && users.length}</div>
             </div>
             <div className="right">
                 <div className="percentage positive">

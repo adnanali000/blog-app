@@ -46,26 +46,27 @@ const Setting = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // try {
-        //     await setDoc(doc(fireDb, "users", user.uid), { credentials });
-        //     alert("Profile updated successfully")
-
-        // }
-        // catch (err) {
-        //     toast.error(err)
-        // }
         try {
-            const singleBlog = doc(fireDb, "users", user.uid);
-            // To update age and favorite color:
-            await updateDoc(singleBlog, {
-              credentials: {username: credentials.username, country: credentials.country,userId: user.uid ,contact:credentials.contact,image:credentials.image,time: new Date()}
-            });
+            await setDoc(doc(fireDb, "users", user.uid), { credentials });
             alert("Profile updated successfully")
             navigate('/')
-          }
-          catch (err) {
-            console.log(err);
-          }
+
+
+        }
+        catch (err) {
+            console.log(err)
+        }
+        // try {
+        //     const singleBlog = doc(fireDb, "users", user.uid);
+        //     await updateDoc(singleBlog, {
+        //       credentials: {username: credentials.username, country: credentials.country,userId: user.uid ,contact:credentials.contact,image:credentials.image,time: new Date()}
+        //     });
+        //     alert("Profile updated successfully")
+        //     navigate('/')
+        //   }
+          // catch (err) {
+          //   console.log(err);
+          // }
     }
 
     return (
